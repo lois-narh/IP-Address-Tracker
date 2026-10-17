@@ -7,7 +7,7 @@ const App = () => {
     <div className="App" >
       <header className='top_banner'>
         <img
-        src='./src/assets/Image.jpg'
+        src='./src/assets/background-image.jpg'
         alt='Header Image'></img>
         
       <div className='overlay'>
