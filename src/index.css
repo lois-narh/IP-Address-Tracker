@@ -9,12 +9,11 @@ body{
   font-family: 'Nunito Sans', sans-serif;  
 }
 
-.top-banner {
+.top-banner img {
   width: 100%;
-  height: 300px; 
+  height: 180px; 
   background-image: url('./src/assets/Image.jpg');
   background-size: cover;
-  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -22,22 +21,37 @@ header {
   position: relative;
   height: 280px;
   background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 1.5rem;
 }
+.overlay {
+  position: absolute;
+  inset: 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 p{
   font-size: 2rem;
-  color: hsl(0, 0%, 17%);
-  margin: 3rem 0 2rem ;
+  color: whitesmoke;
+  font-weight: 600;
+  margin: 0 0 2rem ;
   text-align: center;
 }
 input {
-  border-radius: 10px;
-  width: 325px;
+  border-radius: 15px 0 0 15px;
+  width: 365px;
   height: 45px;
   border: 1px solid hsl(0, 0%, 59%);
   padding-left: 1.5rem;
+}
+button {
+  border-radius: 0 15px 15px 0;
+  width: 60px;
+  height: 45px;
+  border: none;
+  background-color: hsl(0, 0%, 17%);
+  color: white;
 }
