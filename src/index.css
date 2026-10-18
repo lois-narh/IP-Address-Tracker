@@ -104,5 +104,4 @@ button {
 
 .map {
   height: calc(100vh - 280px);
-  background: hsl(0, 0%, 90%);
 }

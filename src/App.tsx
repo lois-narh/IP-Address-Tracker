@@ -1,11 +1,20 @@
 import './App.css';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import markerIcon from './assets/icon-location.svg';
 
 const App = () => {
+  const pin = L.icon({
+  iconUrl: markerIcon,
+  iconSize: [46, 56],
+  iconAnchor: [23, 56],
+});
   return (
     <div className="App">
       <div className="top">
         <header className="top-banner">
-          <img src="./src/assets/background-image.jpg" alt="Header Image" />
+          <img src="./src/assets/pattern-bg-desktop.png" alt="Header Image" />
 
           <div className="overlay">
             <p className="title">IP Address Tracker</p>
@@ -36,7 +45,20 @@ const App = () => {
         </div>
       </div>
 
-      <div className="map"></div>
+      <div className="map">
+        <MapContainer
+  center={[40.7128, -74.006]}
+  zoom={13}
+  zoomControl={false}
+  className="map"
+>
+  <TileLayer
+    attribution='&copy; OpenStreetMap contributors'
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  <Marker position={[40.7128, -74.006]} icon={pin} />
+</MapContainer>
+      </div>
     </div>
   );
 };
