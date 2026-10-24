@@ -4,6 +4,8 @@ import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import markerIcon from "./assets/icon-location.svg";
+import desktopBg from './assets/pattern-bg-desktop.png';
+import mobileBg from './assets/pattern-bg-mobile.png';
 
 const pin = L.icon({
   iconUrl: markerIcon,
@@ -75,9 +77,9 @@ const App = () => {
           <picture>
             <source
               media="(max-width: 600px)"
-              srcSet="./src/assets/pattern-bg-mobile.png"
+              srcSet={mobileBg}
             />
-            <img src="./src/assets/pattern-bg-desktop.png" alt="Header Image" />
+            <img src={desktopBg} alt="Header Image" />
           </picture>
 
           <div className="overlay">
