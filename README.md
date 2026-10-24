@@ -4,13 +4,13 @@ A solution to the [IP Address Tracker challenge on Frontend Mentor](https://www.
 
 ## Live site and code
 
-- Live site: (https://ip-address-tracker-lovat-five.vercel.app/)
+- Live site: https://ip-address-tracker-lovat-five.vercel.app
 - Repo: https://github.com/lois-narh/IP-Address-Tracker
 
 ## Screenshot
 
-![Desktop view](./screenshots/desktop.png)
-![Mobile view](./screenshots/mobile.png)
+![Desktop view](./src/screenshots/desktop.png)
+![Mobile view](./src/screenshots/mobile.png)
 
 ## What it does
 
