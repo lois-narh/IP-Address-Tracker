@@ -56,6 +56,10 @@ button {
   border: none;
   background-color: hsl(0, 0%, 17%);
   color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(0, 0%, 30%);
 }
 .top{
   position:relative;
@@ -66,7 +70,7 @@ button {
   bottom: -70px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1000;
+  z-index: 1001;
   width: 90%;
   max-width: 998px;
   background: white;
